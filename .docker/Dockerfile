@@ -110,9 +110,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 
 WORKDIR /dev_ws/src
 
-RUN git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git
-
-
 FROM zed AS open3d
 
 RUN pip3 install --no-cache-dir --upgrade open3d --ignore-installed PyYAML
